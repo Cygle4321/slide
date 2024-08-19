@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Boostrap</title>
+</head>
+<body>
+    <style>
+        .carousel-indicators img{
+            width: 70px;
+            display: block;
+        } 
+        .carousel-indicators button{
+            width: max-content !important;
+        }
+        .carousel-indicators{
+            position: unset;
+        }
+        .carousel-indicators button.active img{
+            border: 2px solid red;
+        }
+    </style>
+
+    <div class="carousel slide" id="carouselDemo"
+     data-bs-wrap="true"
+     data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active"
+            data-bs-interval="2000">
+                <img src="img/14.jpg" class="w-100">
+                <div class="carousel-caption">
+                    <h5>Title Slide 0</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, neque sint. Dolores, sint, placeat officia, autem voluptatem odio recusandae voluptatum atque ratione natus eligendi tempora voluptatibus beatae vero velit excepturi.
+                    </p>
+                </div>
+            </div>
+
+            <div class="carousel-item active"
+            data-bs-interval="2000">
+                <img src="img/4.jpg" class="w-100">
+                <div class="carousel-caption">
+                    <h5>Title Slide 1</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, neque sint. Dolores, sint, placeat officia, autem voluptatem odio recusandae voluptatum atque ratione natus eligendi tempora voluptatibus beatae vero velit excepturi.
+                    </p>
+                </div>
+            </div>
+
+            <div class="carousel-item active">
+                <img src="img/bugatti-symbolise-l-automobile-ultime-entre-performances-style-et-luxe-c-est-aussi-un-gage-d-exclusivite-photo-bugatti-1614790182.jpg" class="w-100">
+                <div class="carousel-caption">
+                    <h5>Title Slide 2</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, neque sint. Dolores, sint, placeat officia, autem voluptatem odio recusandae voluptatum atque ratione natus eligendi tempora voluptatibus beatae vero velit excepturi.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev"
+         type="button"
+         data-bs-target="#carouselDemo"
+         data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselDemo"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+
+        <div class="carousel-indicators">
+            <button type="button" class="active"
+             data-bs-target="#carouselDemo"
+             data-bs-slide-to="0">
+             <img src="img/14.jpg"/></button>
+
+            <button type="button"
+            data-bs-target="#carouselDemo"
+             data-bs-slide-to="1">
+             <img src="img/4.jpg"/></button>
+
+            <button type="button"
+            data-bs-target="#carouselDemo"
+             data-bs-slide-to="2">
+             <img src="img/bugatti-symbolise-l-automobile-ultime-entre-performances-style-et-luxe-c-est-aussi-un-gage-d-exclusivite-photo-bugatti-1614790182.jpg"/></button>
+        </div>
+
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
